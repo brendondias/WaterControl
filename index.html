@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/pingo_agua.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body id="body">
+    <!--Página Principal-->
+    <div class="div_principal" id="div_principal">
+        <header class="cabeçalho" id="cabeçalho">
+            <h1>
+                Water Control
+            </h1>
+            <button class="botao_linhas" onclick="abrir_principal()">
+                <span class="icone_linhas"></span>
+            </button>
+        </header>
+        <main class="main" id="main">
+            <section class="principal">
+                <div class="box">
+
+                    <div class="caixa_dagua">
+                        
+                        <div class="informaçoes">
+                            <div id="number">
+                                0ML
+                            </div>
+                            <div class="contador_meta" id="contagem_meta">
+                                0ML
+                            </div>
+                        </div>
+
+                        <div class="agua" id="agua">
+                        </div>
+                    </div>
+                </div>
+                <button id="tomar_agua" onclick="tomaragua()">100ML</button>
+            </section>
+            
+        </main>
+    </div>
+
+    <!--Menu Principal-->
+
+    <div class="div_menu" id="div_menu">
+        <header class="cabeçalho_menu" id="cabeçalho_menu">
+            <button id="botao_voltar" class="botao_voltar" onclick="voltar_principal()">
+                <span class="icone_voltar">
+                </span>
+            </button>
+        </header>
+        <section class="menu_principal" id="menu_principal">
+            <button class="meta_botao" onclick="abrir_meta()">
+                Meta
+            </button>
+            <button class="garrafa_botao" onclick="abrir_garrafa()">
+                Garrafa
+            </button>
+            <div class="registros">
+                <h1>Registros</h1>
+
+                <ol class="lista_de_registros" id="lista_de_registros">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+    <!--Menu Meta-->
+
+    <div id="caixa_meta" class="caixa_meta">
+
+        <section class="sub_menu_meta">
+
+            <div class="div_meta">
+        
+
+                <input id="input_meta" type="number" placeholder="200" max="3000">
+                <Label id="input_meta">ML</Label>
+
+                <span></span>
+            </div>
+            <button onclick="confirmar_meta()">
+                Confirmar
+            </button>
+            
+        </section>
+
+    </div>
+
+<!--Menu Garrafa-->
+
+    <div id="caixa_garrafa" class="caixa_garrafa">
+
+        <section class="sub_menu_garrafa">
+
+            <div class="container_recepiente">
+
+                <div class="radio">
+                    <label>
+                      <input type="radio" name="repentes" value="100">
+                      <img src="images/cup_1.png" alt="coffee-cup">
+                      <span>100ML</span>
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                      <input type="radio" name="repentes" value="150">
+                      <img src="images/cup-1.5.png" alt="coffee-cup">
+                      <span>150ML</span>
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                      <input type="radio" name="repentes" value="200">
+                      <img src="images/cup_2.png" alt="water-cup">
+                      <span>200ML</span>
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                      <input type="radio" name="repentes" value="300">
+                      <img src="images/cup_3.png" alt="water-cup">
+                      <span>300ML</span>
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                      <input type="radio" name="repentes" value="400">
+                      <img src="images/cup_4.png" alt="water_cup">
+                      <span>400ML</span>
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                      <input type="radio" name="repentes" value="500">
+                      <img src="images/cup_5.png" alt="water_cup">
+                      <span>500ML</span>
+                    </label>
+                </div>
+
+            </div>
+        
+            <button onclick="confirmar_copo()">
+                Confirmar
+            </button>
+
+        </section>
+
+    </div>
+    <footer id="footer">
+        Desenvolvido por <a href="https://github.com/brendondias" target="_blank">BrendonDias</a>
+        <img src="images/github.png" alt="github icon">
+    </footer>
+</body>
+
+</html>

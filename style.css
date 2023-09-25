@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;400&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Anybody', cursive;
+}
+
+:root {
+    --counter-anim: 0;
+    --default-width: 280px;
+}
+
+/* Página principal */
+
+body {
+    
+    background-color: #CAF0F8;
+    margin: auto;
+    padding: 15px;
+
+}
+
+@media (min-width: 600px){
+
+    body {
+        margin: 0em 5em;
+    }
+}
+
+.div_principal {
+    display: block;
+
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.cabeçalho h1 {
+    font-size: 25px;
+    width: 15px;
+}
+
+.botao_linhas {
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.icone_linhas {
+    width: 40px;
+    height: 40px;
+    background-image: url(images/menu_linhas.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+
+}
+
+
+.main {
+    background-color: transparent;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+}
+
+.principal {
+    background-color: transparent;
+    width: 300px;
+    height: 425px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.box {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #48CAE4;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.caixa_dagua {
+    width: 75%;
+    height: 75%;
+    background-color: #CAF0F8;
+    display: flex;
+    flex-direction: column-reverse;
+    clip-path: circle(50% at 50% 50%);
+    
+}
+
+.informaçoes {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.agua {
+    width: 100%;
+    height: 0%;
+    background-image: linear-gradient(180deg, #5BC0BE 0%, #3A506B 100%);
+    animation: 2s;
+
+}
+
+.resultado {
+    position: absolute;
+    top: 40%;
+    left: 40px;
+    font-size: 35px;
+    color: white;
+}
+
+.principal > button {
+    width: 280px;
+    height: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: #0077B6;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+/* Página Menu-Principal */
+
+
+.div_menu {
+    display: none;
+
+}
+
+.cabeçalho_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+}
+
+.botao_voltar {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.icone_voltar {
+    width: 35px;
+    height: 35px;
+    background-image: url(images/undo.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+}
+
+.menu_principal {
+    background-color: transparent;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.meta_botao {
+    width: var(--default-width);
+    height: 89px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #0077B6;
+    font-size: 33px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+
+.garrafa_botao {
+    width: var(--default-width);
+    height: 89px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #0077B6;
+    font-size: 33px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+
+.registros {
+    width: var(--default-width);
+    height: 330px;
+    background-color: #0077B6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+
+}
+
+.registros > h1 {
+    font-size: 20px;
+}
+
+.registros > ol {
+    background-color: transparent;
+    list-style: none;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Menu Meta*/
+
+.caixa_meta {
+    display: none;
+
+}
+
+.sub_menu_meta {
+    height: 410px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.div_meta {
+    width: var(--default-width);
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.div_meta > input {
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    width: 80px;
+    height: 40px;
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+
+
+.div_meta > input::-webkit-inner-spin-button, 
+            input::-webkit-outer-spin-button {
+
+                appearance: none;
+                margin: 0px;
+}
+
+.div_meta > label {
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+
+.div_meta > span {
+    background-color: black;
+    width: 160px;
+    height: 2px;
+    position: absolute;
+    top: 170px;
+
+    
+}
+
+.sub_menu_meta > button {
+    width: 100%;
+    height: 90px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #0077B6;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+/*Menu garrafa*/
+
+.caixa_garrafa {
+    display: none;
+}
+
+.sub_menu_garrafa {
+    width: 280px;
+    height: 410px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container_recepiente {
+    width: 280px;
+    height: 280px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.radio {
+    float: left;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #CAF0F8;
+
+}
+
+.radio label {
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 15px;
+
+}
+
+.radio label img {
+    width: 40%;
+    height: 40%;
+    z-index: 1;
+}
+
+.radio label input[type=radio] {
+    all: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+
+}
+
+.radio label input[type=radio]:checked {
+    background-color: #0076b66c;
+    border-radius: 15px;
+
+}
+
+.sub_menu_garrafa > button {
+    width: 100%;
+    height: 90px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #0077B6;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+/*Footer*/
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 12px;
+}
+
+footer img {
+    width: 12px;
+    height: 12px;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: black;
+    font-size: bolder;
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: #35485e;
+    
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:active {
+    text-decoration: none;
+    color:  #0077B6;
+}
